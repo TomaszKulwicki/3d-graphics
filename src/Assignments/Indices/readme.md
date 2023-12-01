@@ -1,0 +1,1 @@
+Ilosc zaoszczedzonych bajtów pamięci
