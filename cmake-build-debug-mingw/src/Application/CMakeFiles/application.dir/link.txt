@@ -1,0 +1,2 @@
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc libapplication.a CMakeFiles/application.dir/application.cpp.obj CMakeFiles/application.dir/utils.cpp.obj CMakeFiles/application.dir/shader_source.cpp.obj ../../CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ranlib.exe libapplication.a

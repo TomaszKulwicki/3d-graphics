@@ -1,0 +1,3 @@
+C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/_deps/glfw-subbuild/CMakeFiles/glfw-populate.dir
+C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/_deps/glfw-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/_deps/glfw-subbuild/CMakeFiles/rebuild_cache.dir
