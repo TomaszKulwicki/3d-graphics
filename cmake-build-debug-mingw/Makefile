@@ -329,6 +329,19 @@ Indices/fast:
 	$(MAKE) $(MAKESILENT) -f src\Assignments\Indices\CMakeFiles\Indices.dir\build.make src/Assignments/Indices/CMakeFiles/Indices.dir/build
 .PHONY : Indices/fast
 
+#=============================================================================
+# Target rules for targets named Uniforms
+
+# Build rule for target.
+Uniforms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Uniforms
+.PHONY : Uniforms
+
+# fast build rule for target.
+Uniforms/fast:
+	$(MAKE) $(MAKESILENT) -f src\Assignments\Uniforms\CMakeFiles\Uniforms.dir\build.make src/Assignments/Uniforms/CMakeFiles/Uniforms.dir/build
+.PHONY : Uniforms/fast
+
 src/3rdParty/glad/glad_4_6/glad/src/gl.obj: src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 .PHONY : src/3rdParty/glad/glad_4_6/glad/src/gl.obj
 
@@ -371,6 +384,7 @@ help:
 	@echo ... House
 	@echo ... Indices
 	@echo ... Triangle
+	@echo ... Uniforms
 	@echo ... application
 	@echo ... engine
 	@echo ... glad
