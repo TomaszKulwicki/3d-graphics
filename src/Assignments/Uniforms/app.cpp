@@ -30,7 +30,7 @@ void SimpleShapeApplication::init() {
             -0.5f, -0.5f, 0.0f, 255.0f, 255.0f, 0.0f, //3
 
             0.5f, -0.5f, 0.0f, 255.0f, 0.0f, 0.0f,    //4
-            };
+    };
 
     std::vector<GLushort> indices = {0,1,2, 0,2,3, 3,4,0};
 

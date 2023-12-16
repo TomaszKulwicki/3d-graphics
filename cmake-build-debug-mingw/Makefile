@@ -342,6 +342,19 @@ Uniforms/fast:
 	$(MAKE) $(MAKESILENT) -f src\Assignments\Uniforms\CMakeFiles\Uniforms.dir\build.make src/Assignments/Uniforms/CMakeFiles/Uniforms.dir/build
 .PHONY : Uniforms/fast
 
+#=============================================================================
+# Target rules for targets named PVM
+
+# Build rule for target.
+PVM: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PVM
+.PHONY : PVM
+
+# fast build rule for target.
+PVM/fast:
+	$(MAKE) $(MAKESILENT) -f src\Assignments\PVM\CMakeFiles\PVM.dir\build.make src/Assignments/PVM/CMakeFiles/PVM.dir/build
+.PHONY : PVM/fast
+
 src/3rdParty/glad/glad_4_6/glad/src/gl.obj: src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 .PHONY : src/3rdParty/glad/glad_4_6/glad/src/gl.obj
 
@@ -383,6 +396,7 @@ help:
 	@echo ... Colors
 	@echo ... House
 	@echo ... Indices
+	@echo ... PVM
 	@echo ... Triangle
 	@echo ... Uniforms
 	@echo ... application
