@@ -12,6 +12,5 @@ out vec3 theColor;
 
 void main() {
     gl_Position =  PVM * a_vertex_position;
-    gl_Position.zw = a_vertex_position.zw;
     theColor = figureColor;
 }

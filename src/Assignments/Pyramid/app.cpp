@@ -32,18 +32,37 @@ void SimpleShapeApplication::init() {
             0.5f, 0.0f,  0.5f, 1.0f, 0.0f, 0.0f,    // 2
             -0.5f, 0.0f,  0.5f, 1.0f, 0.0f, 0.0f,   // 3
 
-            //top point
-            0.0f, 1.0f, 0.0f, 1.0f, 0.0f, 0.0f,     //4
+            //first side
+            -0.5f, 0.0f, -0.5f, 0.0f, 0.0f, 1.0f,   // 4
+            0.5f, 0.0f, -0.5f, 0.0f, 0.0f, 1.0f,    // 5
+            0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,     // 6 top
+
+            //second side
+            0.5f, 0.0f, -0.5f, 0.0f, 1.0f, 0.0f,    // 7
+            0.5f, 0.0f, 0.5f, 0.0f, 1.0f, 0.0f,     // 8
+            0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,     // 9 top
+
+            //third side
+            0.5f, 0.0f, 0.5f, 0.5f, 0.5f, 0.0f,     // 10
+            -0.5f, 0.0f, 0.5f, 0.5f, 0.5f, 0.0f,    // 11
+            0.0f, 1.0f, 0.0f, 0.5f, 0.5f, 0.0f,     // 12 top
+
+            //last side
+            -0.5f, 0.0f, 0.5f, 0.0f, 0.5f, 0.5f,     // 13
+            -0.5f, 0.0f, -0.5f, 0.0f, 0.5f, 0.5f,    // 14
+            0.0f, 1.0f, 0.0f, 0.0f, 0.5f, 0.5f,      // 15 top
+
     };
 
-    std::vector<GLushort> indices = {0,1,2, 0,2,3,
-                                     2,4,3,
-                                     0,4,3,
-                                     0,1,4,
-                                     1,2,4,
+    std::vector<GLushort> indices = {0,1,3,
+                                     1,2,3,
+
+                                     4,5,6,
+                                     7,8,9,
+                                     10,12,11,
+                                     13,15,14
     };
 
-    // uniform color
     GLuint uniformBuffer;
     glGenBuffers(1, &uniformBuffer);
     glBindBuffer(GL_UNIFORM_BUFFER, uniformBuffer);
@@ -51,8 +70,8 @@ void SimpleShapeApplication::init() {
     glBindBufferBase(GL_UNIFORM_BUFFER, 0, uniformBuffer);
 
     // color uniform data
-    float strength = 0.5f;
-    float color[3] = { 0.0f, 1.0f, 0.0f};
+    float strength = 1.0f;
+    float color[3] = { 1.0f, 1.0f, 1.0f};
 
     // colors from uniforms
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(float), &strength);
@@ -65,12 +84,12 @@ void SimpleShapeApplication::init() {
     glBufferData(GL_UNIFORM_BUFFER, 64, nullptr, GL_STATIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 1, transformation);
 
-    //PVM
-    glm::mat4 model = glm::mat4(0.5f);
+    // PVM
+    glm::mat4 model = glm::mat4(1.0f);
     glm::mat4 view = glm::lookAt(
-            glm::vec3(1.0f, 3.0f, 3.0f),             // the position of your camera, in world space
-            glm::vec3(0.0f, 0.0f, 0.0f),           // where you want to look at, in world space
-            glm::vec3(0.0f, 1.0f, 0.0f));             // Head is up (set to 0,-1,0 to look upside-down)
+            glm::vec3(-2.0f, 10.0f, 3.0f),             //Position of your camera, in world space
+            glm::vec3(0.0f, 0.0f, 0.0f),              // Where you want to look at, in world space
+            glm::vec3(0.0f, 1.0f, 0.0f));               // Head is up (set to 0,-1,0 to look upside-down)
 
     glm::mat4 projection = glm::perspective(
             glm::radians(45.0f),                     // The vertical Field of View, in radians: the amount of "zoom". Think "camera lens". Usually between 90° (extra wide) and 30° (quite zoomed in)
@@ -78,10 +97,8 @@ void SimpleShapeApplication::init() {
             0.1f,                                           // Near clipping plane. Keep as big as possible, or you'll get precision issues.
             100.0f);                                         // Far clipping plane. Keep as little as possible.
 
-    //glm::mat4 projection = glm::ortho(-10.0f,10.0f,-10.0f,10.0f,0.0f,100.0f);
 
     glm::mat4 PVM = projection * view * model;
-
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), glm::value_ptr(PVM));
 
     // indices
@@ -108,13 +125,12 @@ void SimpleShapeApplication::init() {
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<GLvoid *>(0));
 
-    // colors
-    //glEnableVertexAttribArray(1);
-    //glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<GLvoid *>(3 * sizeof(GLfloat)));
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<GLvoid *>(3 * sizeof(GLfloat)));
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
-    //end of vao "recording"
+    // End of vao "recording"
 
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
 

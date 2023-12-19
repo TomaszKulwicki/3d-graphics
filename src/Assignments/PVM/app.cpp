@@ -57,7 +57,7 @@ void SimpleShapeApplication::init() {
     glBufferData(GL_UNIFORM_BUFFER, 64, nullptr, GL_STATIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 1, transformation);
 
-    //PVM
+    // PVM
     glm::mat4 model = glm::mat4(0.5f);
     glm::mat4 view = glm::lookAt(
             glm::vec3(1.0f, 5.0f, 3.0f),             // the position of your camera, in world space
@@ -100,13 +100,13 @@ void SimpleShapeApplication::init() {
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<GLvoid *>(0));
 
-    // colors
+    // Colors
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<GLvoid *>(3 * sizeof(GLfloat)));
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
-    //end of vao "recording"
+    // End of vao "recording"
 
     // Setting the background color of the rendering window,
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
