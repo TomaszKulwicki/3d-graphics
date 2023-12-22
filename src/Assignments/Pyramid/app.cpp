@@ -37,28 +37,28 @@ void SimpleShapeApplication::init() {
             0.5f, 0.0f, -0.5f, 0.0f, 0.0f, 1.0f,    // 5
             0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,     // 6 top
 
-            //second side
+            //second side - do poprawy
             0.5f, 0.0f, -0.5f, 0.0f, 1.0f, 0.0f,    // 7
             0.5f, 0.0f, 0.5f, 0.0f, 1.0f, 0.0f,     // 8
             0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,     // 9 top
 
             //third side
-            0.5f, 0.0f, 0.5f, 0.5f, 0.5f, 0.0f,     // 10
-            -0.5f, 0.0f, 0.5f, 0.5f, 0.5f, 0.0f,    // 11
-            0.0f, 1.0f, 0.0f, 0.5f, 0.5f, 0.0f,     // 12 top
+            0.5f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f,     // 10
+            -0.5f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f,    // 11
+            0.0f, 1.0f, 0.0f, 1.0f, 0.0f, 0.0f,     // 12 top
 
             //last side
-            -0.5f, 0.0f, 0.5f, 0.0f, 0.5f, 0.5f,     // 13
-            -0.5f, 0.0f, -0.5f, 0.0f, 0.5f, 0.5f,    // 14
-            0.0f, 1.0f, 0.0f, 0.0f, 0.5f, 0.5f,      // 15 top
+            -0.5f, 0.0f, 0.5f, 0.0f, 0.0f, 0.0f,     // 13
+            -0.5f, 0.0f, -0.5f, 0.0f, 0.0f, 0.0f,    // 14
+            0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,      // 15 top
 
     };
 
     std::vector<GLushort> indices = {0,1,3,
                                      1,2,3,
 
-                                     4,5,6,
-                                     7,8,9,
+                                     4,6,5,
+                                     7,9,8,
                                      10,12,11,
                                      13,15,14
     };
@@ -87,7 +87,7 @@ void SimpleShapeApplication::init() {
     // PVM
     glm::mat4 model = glm::mat4(1.0f);
     glm::mat4 view = glm::lookAt(
-            glm::vec3(-2.0f, 10.0f, 3.0f),             //Position of your camera, in world space
+            glm::vec3(-3.0f, 10.0f, 3.0f),             //Position of your camera, in world space
             glm::vec3(0.0f, 0.0f, 0.0f),              // Where you want to look at, in world space
             glm::vec3(0.0f, 1.0f, 0.0f));               // Head is up (set to 0,-1,0 to look upside-down)
 
@@ -144,6 +144,7 @@ void SimpleShapeApplication::init() {
 //This functions is called every frame and does the actual rendering.
 void SimpleShapeApplication::frame() {
     glEnable(GL_DEPTH_TEST);
+    glEnable(GL_CULL_FACE);
     glBindVertexArray(vao_);
     glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_SHORT, nullptr);
     glBindVertexArray(0);

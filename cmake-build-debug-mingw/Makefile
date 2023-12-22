@@ -368,6 +368,19 @@ Pyramid/fast:
 	$(MAKE) $(MAKESILENT) -f src\Assignments\Pyramid\CMakeFiles\Pyramid.dir\build.make src/Assignments/Pyramid/CMakeFiles/Pyramid.dir/build
 .PHONY : Pyramid/fast
 
+#=============================================================================
+# Target rules for targets named Resizing
+
+# Build rule for target.
+Resizing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Resizing
+.PHONY : Resizing
+
+# fast build rule for target.
+Resizing/fast:
+	$(MAKE) $(MAKESILENT) -f src\Assignments\Resizing\CMakeFiles\Resizing.dir\build.make src/Assignments/Resizing/CMakeFiles/Resizing.dir/build
+.PHONY : Resizing/fast
+
 src/3rdParty/glad/glad_4_6/glad/src/gl.obj: src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 .PHONY : src/3rdParty/glad/glad_4_6/glad/src/gl.obj
 
@@ -411,6 +424,7 @@ help:
 	@echo ... Indices
 	@echo ... PVM
 	@echo ... Pyramid
+	@echo ... Resizing
 	@echo ... Triangle
 	@echo ... Uniforms
 	@echo ... application

@@ -450,6 +450,15 @@ Pyramid_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 Pyramid_SOURCE_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Assignments/Pyramid
 
+//Value Computed by CMake
+Resizing_BINARY_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/src/Assignments/Resizing
+
+//Value Computed by CMake
+Resizing_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Resizing_SOURCE_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Assignments/Resizing
+
 //Build all artifacts
 SPDLOG_BUILD_ALL:BOOL=OFF
 
@@ -723,7 +732,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
