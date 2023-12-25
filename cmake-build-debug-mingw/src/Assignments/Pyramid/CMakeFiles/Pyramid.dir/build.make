@@ -112,8 +112,10 @@ src/Assignments/Pyramid/Pyramid.exe: src/Assignments/Pyramid/CMakeFiles/Pyramid.
 src/Assignments/Pyramid/Pyramid.exe: CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 src/Assignments/Pyramid/Pyramid.exe: src/Assignments/Pyramid/CMakeFiles/Pyramid.dir/build.make
 src/Assignments/Pyramid/Pyramid.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Pyramid/Pyramid.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Pyramid/Pyramid.exe: src/Application/libapplication.a
 src/Assignments/Pyramid/Pyramid.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Pyramid/Pyramid.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Pyramid/Pyramid.exe: src/Assignments/Pyramid/CMakeFiles/Pyramid.dir/linkLibs.rsp
 src/Assignments/Pyramid/Pyramid.exe: src/Assignments/Pyramid/CMakeFiles/Pyramid.dir/objects1.rsp
 src/Assignments/Pyramid/Pyramid.exe: src/Assignments/Pyramid/CMakeFiles/Pyramid.dir/link.txt

@@ -112,8 +112,10 @@ src/Assignments/Indices/Indices.exe: src/Assignments/Indices/CMakeFiles/Indices.
 src/Assignments/Indices/Indices.exe: CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 src/Assignments/Indices/Indices.exe: src/Assignments/Indices/CMakeFiles/Indices.dir/build.make
 src/Assignments/Indices/Indices.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Indices/Indices.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Indices/Indices.exe: src/Application/libapplication.a
 src/Assignments/Indices/Indices.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Indices/Indices.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Indices/Indices.exe: src/Assignments/Indices/CMakeFiles/Indices.dir/linkLibs.rsp
 src/Assignments/Indices/Indices.exe: src/Assignments/Indices/CMakeFiles/Indices.dir/objects1.rsp
 src/Assignments/Indices/Indices.exe: src/Assignments/Indices/CMakeFiles/Indices.dir/link.txt

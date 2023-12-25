@@ -112,8 +112,10 @@ src/Assignments/Colors/Colors.exe: src/Assignments/Colors/CMakeFiles/Colors.dir/
 src/Assignments/Colors/Colors.exe: CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 src/Assignments/Colors/Colors.exe: src/Assignments/Colors/CMakeFiles/Colors.dir/build.make
 src/Assignments/Colors/Colors.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Colors/Colors.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Colors/Colors.exe: src/Application/libapplication.a
 src/Assignments/Colors/Colors.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Colors/Colors.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Colors/Colors.exe: src/Assignments/Colors/CMakeFiles/Colors.dir/linkLibs.rsp
 src/Assignments/Colors/Colors.exe: src/Assignments/Colors/CMakeFiles/Colors.dir/objects1.rsp
 src/Assignments/Colors/Colors.exe: src/Assignments/Colors/CMakeFiles/Colors.dir/link.txt

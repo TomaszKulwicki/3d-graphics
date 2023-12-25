@@ -112,8 +112,10 @@ src/Assignments/Triangle/Triangle.exe: src/Assignments/Triangle/CMakeFiles/Trian
 src/Assignments/Triangle/Triangle.exe: CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 src/Assignments/Triangle/Triangle.exe: src/Assignments/Triangle/CMakeFiles/Triangle.dir/build.make
 src/Assignments/Triangle/Triangle.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Triangle/Triangle.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Triangle/Triangle.exe: src/Application/libapplication.a
 src/Assignments/Triangle/Triangle.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Triangle/Triangle.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Triangle/Triangle.exe: src/Assignments/Triangle/CMakeFiles/Triangle.dir/linkLibs.rsp
 src/Assignments/Triangle/Triangle.exe: src/Assignments/Triangle/CMakeFiles/Triangle.dir/objects1.rsp
 src/Assignments/Triangle/Triangle.exe: src/Assignments/Triangle/CMakeFiles/Triangle.dir/link.txt

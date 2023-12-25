@@ -43,25 +43,39 @@ void SimpleShapeApplication::init() {
             0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,     // 9 top
 
             //third side
-            0.5f, 0.0f, 0.5f, 0.5f, 0.5f, 0.0f,     // 10
-            -0.5f, 0.0f, 0.5f, 0.5f, 0.5f, 0.0f,    // 11
-            0.0f, 1.0f, 0.0f, 0.5f, 0.5f, 0.0f,     // 12 top
+            0.5f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f,     // 10
+            -0.5f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f,    // 11
+            0.0f, 1.0f, 0.0f, 1.0f, 0.0f, 0.0f,     // 12 top
 
             //last side
-            -0.5f, 0.0f, 0.5f, 0.0f, 0.5f, 0.5f,     // 13
-            -0.5f, 0.0f, -0.5f, 0.0f, 0.5f, 0.5f,    // 14
-            0.0f, 1.0f, 0.0f, 0.0f, 0.5f, 0.5f,      // 15 top
+            -0.5f, 0.0f, 0.5f, 0.0f, 0.0f, 0.0f,     // 13
+            -0.5f, 0.0f, -0.5f, 0.0f, 0.0f, 0.0f,    // 14
+            0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,      // 15 top
 
     };
 
     std::vector<GLushort> indices = {0,1,3,
                                      1,2,3,
 
-                                     4,5,6,
-                                     7,8,9,
+                                     4,6,5,
+                                     7,9,8,
                                      10,12,11,
                                      13,15,14
     };
+
+    int w, h;
+    std::tie(w, h) = frame_buffer_size();
+    aspect = (float)w/h;
+    fov = glm::pi<float>() / 4.0f;
+    near = 0.1f;
+    far = 100.0f;
+    P = glm::perspective(fov, aspect, near, far);
+    V = glm::lookAt(
+            glm::vec3(2.0f, 2.0f, 3.0f),
+            glm::vec3(0.0f, 0.0f, 0.0f),
+            glm::vec3(0.0f, 1.0f, 0.0f)
+    );
+
 
     GLuint uniformBuffer;
     glGenBuffers(1, &uniformBuffer);
@@ -78,28 +92,10 @@ void SimpleShapeApplication::init() {
     glBufferSubData(GL_UNIFORM_BUFFER, 16, sizeof(float) * 3, &color);
 
     // transformation uniforms
-    GLuint transformation;
     glGenBuffers(1, &transformation);
     glBindBuffer(GL_UNIFORM_BUFFER, transformation);
     glBufferData(GL_UNIFORM_BUFFER, 64, nullptr, GL_STATIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 1, transformation);
-
-    // PVM
-    glm::mat4 model = glm::mat4(1.0f);
-    glm::mat4 view = glm::lookAt(
-            glm::vec3(-2.0f, 10.0f, 3.0f),             //Position of your camera, in world space
-            glm::vec3(0.0f, 0.0f, 0.0f),              // Where you want to look at, in world space
-            glm::vec3(0.0f, 1.0f, 0.0f));               // Head is up (set to 0,-1,0 to look upside-down)
-
-    glm::mat4 projection = glm::perspective(
-            glm::radians(45.0f),                     // The vertical Field of View, in radians: the amount of "zoom". Think "camera lens". Usually between 90° (extra wide) and 30° (quite zoomed in)
-            1.0f,                                           // Aspect Ratio. Depends on the size of your window. Notice that 4/3 == 800/600 == 1280/960
-            0.1f,                                           // Near clipping plane. Keep as big as possible, or you'll get precision issues.
-            100.0f);                                         // Far clipping plane. Keep as little as possible.
-
-
-    glm::mat4 PVM = projection * view * model;
-    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), glm::value_ptr(PVM));
 
     // indices
     GLuint indicesId;
@@ -133,9 +129,6 @@ void SimpleShapeApplication::init() {
     // End of vao "recording"
 
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
-
-    // This setups an OpenGL vieport of the size of the whole rendering window.
-    auto[w, h] = frame_buffer_size();
     glViewport(0, 0, w, h);
 
     glUseProgram(program);
@@ -143,8 +136,24 @@ void SimpleShapeApplication::init() {
 
 //This functions is called every frame and does the actual rendering.
 void SimpleShapeApplication::frame() {
+
+    glm::mat4 M(1.0f);
+    auto PVM = P * V * M;
+
+    glBindBuffer(GL_UNIFORM_BUFFER, transformation);
+    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4),&PVM[0]);
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
     glEnable(GL_DEPTH_TEST);
+    glEnable(GL_CULL_FACE);
     glBindVertexArray(vao_);
     glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_SHORT, nullptr);
     glBindVertexArray(0);
+}
+
+void SimpleShapeApplication::framebuffer_resize_callback(int w, int h) {
+    Application::framebuffer_resize_callback(w, h);
+    glViewport(0,0,w,h);
+    aspect = (float) w / h;
+    P = glm::perspective(fov, aspect, near, far);
 }

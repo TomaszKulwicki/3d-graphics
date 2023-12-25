@@ -303,6 +303,15 @@ CMAKE_STRIP:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/str
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+CameraMovement_BINARY_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/src/Assignments/CameraMovement
+
+//Value Computed by CMake
+CameraMovement_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CameraMovement_SOURCE_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Assignments/CameraMovement
+
+//Value Computed by CMake
 Colors_BINARY_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/src/Assignments/Colors
 
 //Value Computed by CMake
@@ -389,6 +398,15 @@ GLFW_SOURCE_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/
 
 //Force use of high-performance GPU on hybrid systems
 GLFW_USE_HYBRID_HPG:BOOL=OFF
+
+//Generate the install target
+GLM_BUILD_INSTALL:BOOL=OFF
+
+//Build dynamic/static library
+GLM_BUILD_LIBRARY:BOOL=ON
+
+//Build the test programs
+GLM_BUILD_TESTS:BOOL=OFF
 
 //Value Computed by CMake
 Graphics3DCode_BINARY_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw
@@ -569,6 +587,15 @@ XeEngine_IS_TOP_LEVEL:STATIC=OFF
 XeEngine_SOURCE_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/XeEngine
 
 //Value Computed by CMake
+Zoom_BINARY_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/src/Assignments/Zoom
+
+//Value Computed by CMake
+Zoom_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Zoom_SOURCE_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Assignments/Zoom
+
+//Value Computed by CMake
 application_BINARY_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/src/Application
 
 //Value Computed by CMake
@@ -732,7 +759,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

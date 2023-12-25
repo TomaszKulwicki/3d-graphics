@@ -213,6 +213,19 @@ update_mappings/fast:
 .PHONY : update_mappings/fast
 
 #=============================================================================
+# Target rules for targets named glm
+
+# Build rule for target.
+glm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 glm
+.PHONY : glm
+
+# fast build rule for target.
+glm/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\glm-build\glm\CMakeFiles\glm.dir\build.make _deps/glm-build/glm/CMakeFiles/glm.dir/build
+.PHONY : glm/fast
+
+#=============================================================================
 # Target rules for targets named spdlog
 
 # Build rule for target.
@@ -381,6 +394,32 @@ Resizing/fast:
 	$(MAKE) $(MAKESILENT) -f src\Assignments\Resizing\CMakeFiles\Resizing.dir\build.make src/Assignments/Resizing/CMakeFiles/Resizing.dir/build
 .PHONY : Resizing/fast
 
+#=============================================================================
+# Target rules for targets named Zoom
+
+# Build rule for target.
+Zoom: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Zoom
+.PHONY : Zoom
+
+# fast build rule for target.
+Zoom/fast:
+	$(MAKE) $(MAKESILENT) -f src\Assignments\Zoom\CMakeFiles\Zoom.dir\build.make src/Assignments/Zoom/CMakeFiles/Zoom.dir/build
+.PHONY : Zoom/fast
+
+#=============================================================================
+# Target rules for targets named CameraMovement
+
+# Build rule for target.
+CameraMovement: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CameraMovement
+.PHONY : CameraMovement
+
+# fast build rule for target.
+CameraMovement/fast:
+	$(MAKE) $(MAKESILENT) -f src\Assignments\CameraMovement\CMakeFiles\CameraMovement.dir\build.make src/Assignments/CameraMovement/CMakeFiles/CameraMovement.dir/build
+.PHONY : CameraMovement/fast
+
 src/3rdParty/glad/glad_4_6/glad/src/gl.obj: src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 .PHONY : src/3rdParty/glad/glad_4_6/glad/src/gl.obj
 
@@ -419,6 +458,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... uninstall
 	@echo ... update_mappings
+	@echo ... CameraMovement
 	@echo ... Colors
 	@echo ... House
 	@echo ... Indices
@@ -427,10 +467,12 @@ help:
 	@echo ... Resizing
 	@echo ... Triangle
 	@echo ... Uniforms
+	@echo ... Zoom
 	@echo ... application
 	@echo ... engine
 	@echo ... glad
 	@echo ... glfw
+	@echo ... glm
 	@echo ... objreader
 	@echo ... spdlog
 	@echo ... xe-engine

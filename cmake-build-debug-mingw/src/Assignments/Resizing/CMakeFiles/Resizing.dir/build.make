@@ -112,8 +112,10 @@ src/Assignments/Resizing/Resizing.exe: src/Assignments/Resizing/CMakeFiles/Resiz
 src/Assignments/Resizing/Resizing.exe: CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 src/Assignments/Resizing/Resizing.exe: src/Assignments/Resizing/CMakeFiles/Resizing.dir/build.make
 src/Assignments/Resizing/Resizing.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Resizing/Resizing.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Resizing/Resizing.exe: src/Application/libapplication.a
 src/Assignments/Resizing/Resizing.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Resizing/Resizing.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Resizing/Resizing.exe: src/Assignments/Resizing/CMakeFiles/Resizing.dir/linkLibs.rsp
 src/Assignments/Resizing/Resizing.exe: src/Assignments/Resizing/CMakeFiles/Resizing.dir/objects1.rsp
 src/Assignments/Resizing/Resizing.exe: src/Assignments/Resizing/CMakeFiles/Resizing.dir/link.txt

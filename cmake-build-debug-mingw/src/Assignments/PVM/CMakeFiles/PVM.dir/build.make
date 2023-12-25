@@ -112,8 +112,10 @@ src/Assignments/PVM/PVM.exe: src/Assignments/PVM/CMakeFiles/PVM.dir/app.cpp.obj
 src/Assignments/PVM/PVM.exe: CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 src/Assignments/PVM/PVM.exe: src/Assignments/PVM/CMakeFiles/PVM.dir/build.make
 src/Assignments/PVM/PVM.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/PVM/PVM.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/PVM/PVM.exe: src/Application/libapplication.a
 src/Assignments/PVM/PVM.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/PVM/PVM.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/PVM/PVM.exe: src/Assignments/PVM/CMakeFiles/PVM.dir/linkLibs.rsp
 src/Assignments/PVM/PVM.exe: src/Assignments/PVM/CMakeFiles/PVM.dir/objects1.rsp
 src/Assignments/PVM/PVM.exe: src/Assignments/PVM/CMakeFiles/PVM.dir/link.txt

@@ -112,8 +112,10 @@ src/Assignments/House/House.exe: src/Assignments/House/CMakeFiles/House.dir/app.
 src/Assignments/House/House.exe: CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 src/Assignments/House/House.exe: src/Assignments/House/CMakeFiles/House.dir/build.make
 src/Assignments/House/House.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/House/House.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/House/House.exe: src/Application/libapplication.a
 src/Assignments/House/House.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/House/House.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/House/House.exe: src/Assignments/House/CMakeFiles/House.dir/linkLibs.rsp
 src/Assignments/House/House.exe: src/Assignments/House/CMakeFiles/House.dir/objects1.rsp
 src/Assignments/House/House.exe: src/Assignments/House/CMakeFiles/House.dir/link.txt

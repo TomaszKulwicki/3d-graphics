@@ -112,8 +112,10 @@ src/Assignments/Uniforms/Uniforms.exe: src/Assignments/Uniforms/CMakeFiles/Unifo
 src/Assignments/Uniforms/Uniforms.exe: CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 src/Assignments/Uniforms/Uniforms.exe: src/Assignments/Uniforms/CMakeFiles/Uniforms.dir/build.make
 src/Assignments/Uniforms/Uniforms.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Uniforms/Uniforms.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Uniforms/Uniforms.exe: src/Application/libapplication.a
 src/Assignments/Uniforms/Uniforms.exe: _deps/glfw-build/src/libglfw3.a
+src/Assignments/Uniforms/Uniforms.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Uniforms/Uniforms.exe: src/Assignments/Uniforms/CMakeFiles/Uniforms.dir/linkLibs.rsp
 src/Assignments/Uniforms/Uniforms.exe: src/Assignments/Uniforms/CMakeFiles/Uniforms.dir/objects1.rsp
 src/Assignments/Uniforms/Uniforms.exe: src/Assignments/Uniforms/CMakeFiles/Uniforms.dir/link.txt

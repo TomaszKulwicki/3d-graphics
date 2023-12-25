@@ -1,14 +1,9 @@
-//
-// Created by pbialas on 05.08.2020.
-//
-
 #pragma once
 
 #include <vector>
-
+#include <glm/glm.hpp>
 #include "Application/application.h"
 #include "Application/utils.h"
-
 #include "glad/gl.h"
 
 class SimpleShapeApplication : public xe::Application
@@ -20,6 +15,15 @@ public:
 
     void frame() override;
 
+    void framebuffer_resize_callback(int w, int h) override;
+
 private:
     GLuint vao_;
+    float fov;
+    float aspect;
+    float near;
+    float far;
+    glm::mat4 P;
+    glm::mat4 V;
+    GLuint transformation;
 };
