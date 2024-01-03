@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "src/Assignments/MeshesMaterials",
+		"source" : "src/Assignments/MeshesMaterials"
+	}
+}

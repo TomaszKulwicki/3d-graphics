@@ -9,10 +9,20 @@
 void xe::Mesh::draw() const {
     glBindVertexArray(vao_);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, i_buffer_);
+
     for (auto i = 0; i < submeshes_.size(); i++) {
+        if (submeshes_[i].material) {
+            submeshes_[i].material->bind(); // Związanie materiału przed rysowaniem
+        }
+
         glDrawElements(GL_TRIANGLES, submeshes_[i].count(), GL_UNSIGNED_SHORT,
                        reinterpret_cast<void *>(sizeof(GLushort) * submeshes_[i].start));
+
+        if (submeshes_[i].material) {
+            submeshes_[i].material->unbind(); // Rozwiązanie materiału po rysowaniu
+        }
     }
+
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0u);
     glBindVertexArray(0u);
 }

@@ -436,6 +436,15 @@ Indices_IS_TOP_LEVEL:STATIC=OFF
 Indices_SOURCE_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Assignments/Indices
 
 //Value Computed by CMake
+MeshesMaterials_BINARY_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/src/Assignments/MeshesMaterials
+
+//Value Computed by CMake
+MeshesMaterials_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+MeshesMaterials_SOURCE_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Assignments/MeshesMaterials
+
+//Value Computed by CMake
 OBJReader_BINARY_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/src/ObjectReader
 
 //Value Computed by CMake
@@ -759,7 +768,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

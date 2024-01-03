@@ -420,6 +420,19 @@ CameraMovement/fast:
 	$(MAKE) $(MAKESILENT) -f src\Assignments\CameraMovement\CMakeFiles\CameraMovement.dir\build.make src/Assignments/CameraMovement/CMakeFiles/CameraMovement.dir/build
 .PHONY : CameraMovement/fast
 
+#=============================================================================
+# Target rules for targets named MeshesMaterials
+
+# Build rule for target.
+MeshesMaterials: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MeshesMaterials
+.PHONY : MeshesMaterials
+
+# fast build rule for target.
+MeshesMaterials/fast:
+	$(MAKE) $(MAKESILENT) -f src\Assignments\MeshesMaterials\CMakeFiles\MeshesMaterials.dir\build.make src/Assignments/MeshesMaterials/CMakeFiles/MeshesMaterials.dir/build
+.PHONY : MeshesMaterials/fast
+
 src/3rdParty/glad/glad_4_6/glad/src/gl.obj: src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 .PHONY : src/3rdParty/glad/glad_4_6/glad/src/gl.obj
 
@@ -462,6 +475,7 @@ help:
 	@echo ... Colors
 	@echo ... House
 	@echo ... Indices
+	@echo ... MeshesMaterials
 	@echo ... PVM
 	@echo ... Pyramid
 	@echo ... Resizing
