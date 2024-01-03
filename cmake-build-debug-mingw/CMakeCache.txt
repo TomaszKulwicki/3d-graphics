@@ -569,6 +569,15 @@ SPDLOG_WCHAR_FILENAMES:BOOL=OFF
 SPDLOG_WCHAR_SUPPORT:BOOL=OFF
 
 //Value Computed by CMake
+Textures_BINARY_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/src/Assignments/Textures
+
+//Value Computed by CMake
+Textures_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Textures_SOURCE_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Assignments/Textures
+
+//Value Computed by CMake
 Triangle_BINARY_DIR:STATIC=C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/cmake-build-debug-mingw/src/Assignments/Triangle
 
 //Value Computed by CMake

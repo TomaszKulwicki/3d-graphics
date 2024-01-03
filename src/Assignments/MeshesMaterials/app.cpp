@@ -31,34 +31,33 @@ void SimpleShapeApplication::init() {
 
     std::vector<GLfloat> vertices = {
             //base (x,y,z)
-            -0.5f, 0.0f, -0.5f, 1.0f, 1.0f, 0.0f,   // 0
-            0.5f, 0.0f, -0.5f, 1.0f, 1.0f, 0.0f,    // 1
-            0.5f, 0.0f,  0.5f, 1.0f, 1.0f, 0.0f,    // 2
+            -0.5f, 0.0f, -0.5f,   // 0
+            0.5f, 0.0f, -0.5f,    // 1
+            0.5f, 0.0f,  0.5f,    // 2
 
-            0.5f, 0.0f,  0.5f, 1.0f, 1.0f, 0.0f,    // 3
-            -0.5f, 0.0f,  0.5f, 1.0f, 1.0f, 0.0f,   // 4
-            -0.5f, 0.0f, -0.5f, 1.0f, 1.0f, 0.0f,   // 5
+            0.5f, 0.0f,  0.5f,    // 3
+            -0.5f, 0.0f,  0.5f,   // 4
+            -0.5f, 0.0f, -0.5f,   // 5
 
             //first side
-            0.5f, 0.0f, -0.5f, 0.0f, 0.0f, 1.0f,    // 6
-            -0.5f, 0.0f, -0.5f, 0.0f, 0.0f, 1.0f,   // 7
-            0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,     // 8 top
+            0.5f, 0.0f, -0.5f,    // 6
+            -0.5f, 0.0f, -0.5f,   // 7
+            0.0f, 1.0f, 0.0f,     // 8 top
 
             //second side
-            0.5f, 0.0f, 0.5f, 0.0f, 1.0f, 0.0f,     // 9
-            0.5f, 0.0f, -0.5f, 0.0f, 1.0f, 0.0f,    // 10
-            0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,     // 11 top
+            0.5f, 0.0f, 0.5f,     // 9
+            0.5f, 0.0f, -0.5f,    // 10
+            0.0f, 1.0f, 0.0f,     // 11 top
 
             //third side
-            -0.5f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f,     // 12
-            0.5f, 0.0f, 0.5f, 1.0f, 0.0f, 0.0f,      // 13
-            0.0f, 1.0f, 0.0f, 1.0f, 0.0f, 0.0f,      // 14 top
+            -0.5f, 0.0f, 0.5f,     // 12
+            0.5f, 0.0f, 0.5f,     // 13
+            0.0f, 1.0f, 0.0f,     // 14 top
 
             //last side
-            -0.5f, 0.0f, -0.5f, 0.0f, 0.0f, 0.0f,     // 15
-            -0.5f, 0.0f, 0.5f, 0.0f, 0.0f, 0.0f,      // 16
-            0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,       // 17 top
-
+            -0.5f, 0.0f, -0.5f,     // 15
+            -0.5f, 0.0f, 0.5f,      // 16
+            0.0f, 1.0f, 0.0f,       // 17 top
     };
 
     std::vector<GLushort> indices = {0,1,2,
@@ -78,11 +77,12 @@ void SimpleShapeApplication::init() {
     pyramid->allocate_index_buffer(indices.size() * sizeof(GLfloat), GL_STATIC_DRAW);
     pyramid->load_indices(0, indices.size() * sizeof(GLfloat), indices.data());
 
-    pyramid->add_submesh(1, 6, new xe::ColorMaterial({1.0f, 0.0f, 0.0f, 1.0f}) );
-    pyramid->add_submesh(7, 9, new xe::ColorMaterial({1.0f, 0.0f, 0.0f, 1.0f}) );
-    pyramid->add_submesh(10, 12, new xe::ColorMaterial({1.0f, 0.0f, 0.0f, 1.0f}) );
-    pyramid->add_submesh(13, 15, new xe::ColorMaterial({1.0f, 0.0f, 0.0f, 1.0f}) );
-    pyramid->add_submesh(16, 18, new xe::ColorMaterial({1.0f, 0.0f, 0.0f, 1.0f}) );
+    pyramid->add_submesh(0, 6, new xe::ColorMaterial({1.0f, 1.0f, 1.0f, 1.0f}));
+    pyramid->add_submesh(6, 9, new xe::ColorMaterial({0.0f, 0.0f, 0.0f, 1.0f}));
+    pyramid->add_submesh(9, 12, new xe::ColorMaterial({0.0f, 0.0f, 1.0f, 1.0f}));
+    pyramid->add_submesh(12, 15, new xe::ColorMaterial({1.0f, 0.0f, 0.0f, 1.0f}));
+    pyramid->add_submesh(15, 18, new xe::ColorMaterial({0.0f, 1.0f, 0.0f, 1.0f}));
+
     add_submesh(pyramid);
 
     // color uniform data
@@ -141,10 +141,10 @@ void SimpleShapeApplication::init() {
 
     // This indicates that the data for attribute 0 should be read from a vertex buffer.
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<GLvoid *>(0));
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), reinterpret_cast<GLvoid *>(0));
 
-    glEnableVertexAttribArray(1);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<GLvoid *>(3 * sizeof(GLfloat)));
+    //glEnableVertexAttribArray(1);
+    //glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), reinterpret_cast<GLvoid *>(3 * sizeof(GLfloat)));
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
