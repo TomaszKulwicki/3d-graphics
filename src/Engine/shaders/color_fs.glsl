@@ -8,6 +8,7 @@ layout(std140, binding=0) uniform Modifiers {
     layout(std140) uniform Color {
     #endif
     vec4  Kd;
+    bool use_map_Kd;
 };
 
 in vec2 vertex_texcoords;
@@ -15,6 +16,9 @@ in vec2 vertex_texcoords;
 uniform sampler2D map_Kd;
 
 void main() {
+    if (use_map_Kd){
+    vFragColor = Kd*texture(map_Kd, vertex_texcoords);
+    } else {
     vFragColor = Kd;
-
+    }
 }

@@ -1,6 +1,3 @@
-//
-// Created by Piotr Białas on 20/11/2021.
-//
 
 #pragma once
 
@@ -41,11 +38,5 @@ namespace xe {
         GLuint texture_unit_;
     };
 
-
     GLuint create_texture(const std::string &name);
-
 }
-
-
-
-

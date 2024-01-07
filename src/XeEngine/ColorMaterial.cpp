@@ -25,12 +25,11 @@ namespace xe {
             OGL_CALL(glBindTexture(GL_TEXTURE_2D, texture_));
             use_map_Kd = 1;
         }
-        OGL_CALL(glBindBufferBase(GL_UNIFORM_BUFFER, 0, color_uniform_buffer_));
-
+        glBindBufferBase(GL_UNIFORM_BUFFER, 0, color_uniform_buffer_);
         glBindBuffer(GL_UNIFORM_BUFFER, color_uniform_buffer_);
         glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::vec4), &Kd_[0]);
         glBufferSubData(GL_UNIFORM_BUFFER, 4 * sizeof(float), sizeof(GLint), &use_map_Kd);
-        OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, 0u));
+        glBindBuffer(GL_UNIFORM_BUFFER, 0u);
 
     }
 
@@ -82,7 +81,6 @@ namespace xe {
         }
 
     }
-
 
     GLuint create_texture(const std::string &name) {
 

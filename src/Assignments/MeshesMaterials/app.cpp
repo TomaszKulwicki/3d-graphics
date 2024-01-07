@@ -62,7 +62,6 @@ void SimpleShapeApplication::init() {
 
     std::vector<GLushort> indices = {0,1,2,
                                      3,4,5,
-
                                      6,7,8,
                                      9,10,11,
                                      12,13,14,
@@ -78,10 +77,10 @@ void SimpleShapeApplication::init() {
     pyramid->load_indices(0, indices.size() * sizeof(GLfloat), indices.data());
 
     pyramid->add_submesh(0, 6, new xe::ColorMaterial({1.0f, 1.0f, 1.0f, 1.0f}));
-    pyramid->add_submesh(6, 9, new xe::ColorMaterial({0.0f, 0.0f, 0.0f, 1.0f}));
-    pyramid->add_submesh(9, 12, new xe::ColorMaterial({0.0f, 0.0f, 1.0f, 1.0f}));
-    pyramid->add_submesh(12, 15, new xe::ColorMaterial({1.0f, 0.0f, 0.0f, 1.0f}));
-    pyramid->add_submesh(15, 18, new xe::ColorMaterial({0.0f, 1.0f, 0.0f, 1.0f}));
+    pyramid->add_submesh(6, 9, new xe::ColorMaterial({1.0f, 0.0f, 0.0f, 1.0f}));
+    pyramid->add_submesh(9, 12, new xe::ColorMaterial({1.0f, 1.0f, 0.0f, 1.0f}));
+    pyramid->add_submesh(12, 15, new xe::ColorMaterial({1.0f, 0.0f, 1.0f, 1.0f}));
+    pyramid->add_submesh(15, 18, new xe::ColorMaterial({0.0f, 0.0f, 0.0f, 1.0f}));
 
     add_submesh(pyramid);
 
@@ -97,9 +96,9 @@ void SimpleShapeApplication::init() {
     far = 100.0f;
 
     camera_ -> look_at(
-                glm::vec3(2.0f, 2.0f, 3.0f),
-                glm::vec3(0.0f, 0.0f, 0.0f),
-                glm::vec3(0.0f, 1.0f, 0.0f));
+            glm::vec3(2.0f, 2.0f, 3.0f),
+            glm::vec3(0.0f, 0.0f, 0.0f),
+            glm::vec3(0.0f, 1.0f, 0.0f));
     camera_ -> perspective(fov, aspect, near, far);
 
     // uniform buffer

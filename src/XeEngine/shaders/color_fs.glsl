@@ -11,14 +11,14 @@ layout(std140, binding=0) uniform Color {
     bool use_map_Kd;
 };
 
-in vec2 vertex_texcoords_0;
+in vec2 vertex_texcoords;
 
 uniform sampler2D map_Kd;
 
 void main() {
-    if (use_map_Kd)
-    vFragColor = Kd*texture(map_Kd, vertex_texcoords_0);
-    else
-    vFragColor = Kd;
-    //vFragColor = vec4(1.0, 0.0, 0.0, 1.0);
+    if (use_map_Kd) {
+        vFragColor = Kd*texture(map_Kd, vertex_texcoords);
+    } else {
+        vFragColor = Kd;
+    }
 }
