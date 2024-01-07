@@ -115,8 +115,10 @@ src/Assignments/MeshesMaterials/MeshesMaterials.exe: _deps/glfw-build/src/libglf
 src/Assignments/MeshesMaterials/MeshesMaterials.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/MeshesMaterials/MeshesMaterials.exe: src/Application/libapplication.a
 src/Assignments/MeshesMaterials/MeshesMaterials.exe: src/Engine/libengine.a
+src/Assignments/MeshesMaterials/MeshesMaterials.exe: src/ObjectReader/libobjreader.a
 src/Assignments/MeshesMaterials/MeshesMaterials.exe: _deps/glfw-build/src/libglfw3.a
 src/Assignments/MeshesMaterials/MeshesMaterials.exe: _deps/glm-build/glm/libglm.a
+src/Assignments/MeshesMaterials/MeshesMaterials.exe: _deps/spdlog-build/libspdlogd.a
 src/Assignments/MeshesMaterials/MeshesMaterials.exe: src/Assignments/MeshesMaterials/CMakeFiles/MeshesMaterials.dir/linkLibs.rsp
 src/Assignments/MeshesMaterials/MeshesMaterials.exe: src/Assignments/MeshesMaterials/CMakeFiles/MeshesMaterials.dir/objects1.rsp
 src/Assignments/MeshesMaterials/MeshesMaterials.exe: src/Assignments/MeshesMaterials/CMakeFiles/MeshesMaterials.dir/link.txt

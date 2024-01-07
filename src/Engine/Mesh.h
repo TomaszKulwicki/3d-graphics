@@ -35,9 +35,14 @@ namespace xe {
 
         void vertex_attrib_pointer(GLuint index, GLuint size, GLenum type, GLsizei stride, GLsizei offset);
 
-        void add_submesh(GLuint start, GLuint end, ColorMaterial* material = nullptr) {
+        void add_submesh(GLuint start, GLuint end, Material* material = nullptr) {
             submeshes_.push_back({start, end, material});
         }
+
+        void *map_vertex_buffer();
+        void unmap_vertex_buffer();
+        void *map_index_buffer();
+        void unmap_index_buffer();
 
         void draw() const;
 

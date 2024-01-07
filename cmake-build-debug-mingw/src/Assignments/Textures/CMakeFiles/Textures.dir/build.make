@@ -115,8 +115,10 @@ src/Assignments/Textures/Textures.exe: _deps/glfw-build/src/libglfw3.a
 src/Assignments/Textures/Textures.exe: _deps/glm-build/glm/libglm.a
 src/Assignments/Textures/Textures.exe: src/Application/libapplication.a
 src/Assignments/Textures/Textures.exe: src/Engine/libengine.a
+src/Assignments/Textures/Textures.exe: src/ObjectReader/libobjreader.a
 src/Assignments/Textures/Textures.exe: _deps/glfw-build/src/libglfw3.a
 src/Assignments/Textures/Textures.exe: _deps/glm-build/glm/libglm.a
+src/Assignments/Textures/Textures.exe: _deps/spdlog-build/libspdlogd.a
 src/Assignments/Textures/Textures.exe: src/Assignments/Textures/CMakeFiles/Textures.dir/linkLibs.rsp
 src/Assignments/Textures/Textures.exe: src/Assignments/Textures/CMakeFiles/Textures.dir/objects1.rsp
 src/Assignments/Textures/Textures.exe: src/Assignments/Textures/CMakeFiles/Textures.dir/link.txt

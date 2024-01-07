@@ -222,6 +222,78 @@ Mesh.cpp.s:
 	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/Mesh.cpp.s
 .PHONY : Mesh.cpp.s
 
+PhongMaterial.obj: PhongMaterial.cpp.obj
+.PHONY : PhongMaterial.obj
+
+# target to build an object file
+PhongMaterial.cpp.obj:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/PhongMaterial.cpp.obj
+.PHONY : PhongMaterial.cpp.obj
+
+PhongMaterial.i: PhongMaterial.cpp.i
+.PHONY : PhongMaterial.i
+
+# target to preprocess a source file
+PhongMaterial.cpp.i:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/PhongMaterial.cpp.i
+.PHONY : PhongMaterial.cpp.i
+
+PhongMaterial.s: PhongMaterial.cpp.s
+.PHONY : PhongMaterial.s
+
+# target to generate assembly for a file
+PhongMaterial.cpp.s:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/PhongMaterial.cpp.s
+.PHONY : PhongMaterial.cpp.s
+
+mesh_loader.obj: mesh_loader.cpp.obj
+.PHONY : mesh_loader.obj
+
+# target to build an object file
+mesh_loader.cpp.obj:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/mesh_loader.cpp.obj
+.PHONY : mesh_loader.cpp.obj
+
+mesh_loader.i: mesh_loader.cpp.i
+.PHONY : mesh_loader.i
+
+# target to preprocess a source file
+mesh_loader.cpp.i:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/mesh_loader.cpp.i
+.PHONY : mesh_loader.cpp.i
+
+mesh_loader.s: mesh_loader.cpp.s
+.PHONY : mesh_loader.s
+
+# target to generate assembly for a file
+mesh_loader.cpp.s:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/mesh_loader.cpp.s
+.PHONY : mesh_loader.cpp.s
+
+utils.obj: utils.cpp.obj
+.PHONY : utils.obj
+
+# target to build an object file
+utils.cpp.obj:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/utils.cpp.obj
+.PHONY : utils.cpp.obj
+
+utils.i: utils.cpp.i
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/utils.cpp.s
+.PHONY : utils.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -241,6 +313,15 @@ help:
 	@echo ... Mesh.obj
 	@echo ... Mesh.i
 	@echo ... Mesh.s
+	@echo ... PhongMaterial.obj
+	@echo ... PhongMaterial.i
+	@echo ... PhongMaterial.s
+	@echo ... mesh_loader.obj
+	@echo ... mesh_loader.i
+	@echo ... mesh_loader.s
+	@echo ... utils.obj
+	@echo ... utils.i
+	@echo ... utils.s
 .PHONY : help
 
 

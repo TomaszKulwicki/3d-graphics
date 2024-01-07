@@ -320,6 +320,7 @@ src/Engine/CMakeFiles/engine.dir/Material.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/src/3rdParty/stb/stb_image.h \
  C:\Users\Tomasz\ Kulwicki\Desktop\UJ\Grafika\ 3D\3d23-main\src\Engine\Material.h \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/src/3rdParty/glad/glad_4_6/glad/include/glad/gl.h \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/src/3rdParty/glad/glad_4_6/glad/include/KHR/khrplatform.h \

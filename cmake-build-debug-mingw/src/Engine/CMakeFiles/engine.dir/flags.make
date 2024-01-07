@@ -3,13 +3,13 @@
 
 # compile C with C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/gcc.exe
 # compile CXX with C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/g++.exe
-C_DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Engine\"" -DPROJECT_NAME=\"Engine\" -DROOT_DIR="\"C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main\"" -DXE_DEBUG
+C_DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Engine\"" -DPROJECT_NAME=\"Engine\" -DROOT_DIR="\"C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main\"" -DSPDLOG_COMPILED_LIB -DXE_DEBUG
 
 C_INCLUDES = @CMakeFiles/engine.dir/includes_C.rsp
 
 C_FLAGS = -g -std=gnu11 -fdiagnostics-color=always
 
-CXX_DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Engine\"" -DPROJECT_NAME=\"Engine\" -DROOT_DIR="\"C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main\"" -DXE_DEBUG
+CXX_DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR="\"C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main/src/Engine\"" -DPROJECT_NAME=\"Engine\" -DROOT_DIR="\"C:/Users/Tomasz Kulwicki/Desktop/UJ/Grafika 3D/3d23-main\"" -DSPDLOG_COMPILED_LIB -DXE_DEBUG
 
 CXX_INCLUDES = @CMakeFiles/engine.dir/includes_CXX.rsp
 
