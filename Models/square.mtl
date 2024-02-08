@@ -1,0 +1,3 @@
+newmtl square_material
+Kd 0.25 0.25 0.25
+illum 1

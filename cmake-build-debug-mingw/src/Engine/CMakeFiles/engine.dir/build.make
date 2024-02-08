@@ -143,13 +143,45 @@ src/Engine/CMakeFiles/engine.dir/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/utils.cpp.s"
 	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1\src\Engine && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\src\Engine\utils.cpp" -o CMakeFiles\engine.dir\utils.cpp.s
 
+src/Engine/CMakeFiles/engine.dir/texture.cpp.obj: src/Engine/CMakeFiles/engine.dir/flags.make
+src/Engine/CMakeFiles/engine.dir/texture.cpp.obj: src/Engine/CMakeFiles/engine.dir/includes_CXX.rsp
+src/Engine/CMakeFiles/engine.dir/texture.cpp.obj: C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/src/Engine/texture.cpp
+src/Engine/CMakeFiles/engine.dir/texture.cpp.obj: src/Engine/CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\cmake-build-debug-mingw\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/Engine/CMakeFiles/engine.dir/texture.cpp.obj"
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1\src\Engine && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/Engine/CMakeFiles/engine.dir/texture.cpp.obj -MF CMakeFiles\engine.dir\texture.cpp.obj.d -o CMakeFiles\engine.dir\texture.cpp.obj -c "C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\src\Engine\texture.cpp"
+
+src/Engine/CMakeFiles/engine.dir/texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/texture.cpp.i"
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1\src\Engine && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\src\Engine\texture.cpp" > CMakeFiles\engine.dir\texture.cpp.i
+
+src/Engine/CMakeFiles/engine.dir/texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/texture.cpp.s"
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1\src\Engine && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\src\Engine\texture.cpp" -o CMakeFiles\engine.dir\texture.cpp.s
+
+src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.obj: src/Engine/CMakeFiles/engine.dir/flags.make
+src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.obj: src/Engine/CMakeFiles/engine.dir/includes_CXX.rsp
+src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.obj: C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/src/Engine/ColorMaterial.cpp
+src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.obj: src/Engine/CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\cmake-build-debug-mingw\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.obj"
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1\src\Engine && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.obj -MF CMakeFiles\engine.dir\ColorMaterial.cpp.obj.d -o CMakeFiles\engine.dir\ColorMaterial.cpp.obj -c "C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\src\Engine\ColorMaterial.cpp"
+
+src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/ColorMaterial.cpp.i"
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1\src\Engine && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\src\Engine\ColorMaterial.cpp" > CMakeFiles\engine.dir\ColorMaterial.cpp.i
+
+src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/ColorMaterial.cpp.s"
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1\src\Engine && C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\src\Engine\ColorMaterial.cpp" -o CMakeFiles\engine.dir\ColorMaterial.cpp.s
+
 # Object files for target engine
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/Mesh.cpp.obj" \
 "CMakeFiles/engine.dir/Material.cpp.obj" \
 "CMakeFiles/engine.dir/mesh_loader.cpp.obj" \
 "CMakeFiles/engine.dir/PhongMaterial.cpp.obj" \
-"CMakeFiles/engine.dir/utils.cpp.obj"
+"CMakeFiles/engine.dir/utils.cpp.obj" \
+"CMakeFiles/engine.dir/texture.cpp.obj" \
+"CMakeFiles/engine.dir/ColorMaterial.cpp.obj"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS = \
@@ -160,10 +192,12 @@ src/Engine/libengine.a: src/Engine/CMakeFiles/engine.dir/Material.cpp.obj
 src/Engine/libengine.a: src/Engine/CMakeFiles/engine.dir/mesh_loader.cpp.obj
 src/Engine/libengine.a: src/Engine/CMakeFiles/engine.dir/PhongMaterial.cpp.obj
 src/Engine/libengine.a: src/Engine/CMakeFiles/engine.dir/utils.cpp.obj
+src/Engine/libengine.a: src/Engine/CMakeFiles/engine.dir/texture.cpp.obj
+src/Engine/libengine.a: src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.obj
 src/Engine/libengine.a: CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 src/Engine/libengine.a: src/Engine/CMakeFiles/engine.dir/build.make
 src/Engine/libengine.a: src/Engine/CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\cmake-build-debug-mingw\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libengine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Tomasz Kulwicki\Desktop\UJ\Grafika 3D\3d23-main\cmake-build-debug-mingw\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libengine.a"
 	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1\src\Engine && $(CMAKE_COMMAND) -P CMakeFiles\engine.dir\cmake_clean_target.cmake
 	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1\src\Engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\engine.dir\link.txt --verbose=$(VERBOSE)
 

@@ -6,13 +6,15 @@
 
 #include "Application/utils.h"
 #include "Engine/utils.h"
-#include "spdlog/spdlog.h"
+//#include "spdlog/spdlog.h"
+#include <glad/gl.h>
 
 namespace xe {
 
     GLuint PhongMaterial::shader_ = 0u;
     GLuint PhongMaterial::material_uniform_buffer_ = 0u;
     GLint  PhongMaterial::uniform_map_Kd_location_ = 0;
+    GLint PhongMaterial::uniform_ambient_location_ = 0;
 
     void PhongMaterial::bind() {
         glUseProgram(program());
@@ -38,8 +40,6 @@ namespace xe {
     }
 
     void PhongMaterial::init() {
-
-
         auto program = xe::utils::create_program(
                 {{GL_VERTEX_SHADER,   std::string(PROJECT_DIR) + "/shaders/phong_vs.glsl"},
                  {GL_FRAGMENT_SHADER, std::string(PROJECT_DIR) + "/shaders/phong_fs.glsl"}});
@@ -74,10 +74,13 @@ namespace xe {
 
         uniform_map_Kd_location_ = glGetUniformLocation(shader_, "map_Kd");
         if (uniform_map_Kd_location_ == -1) {
-            spdlog::warn("Cannot get uniform {} location", "map_Kd");
+            std::cout << "Cannot get uniform {} location", "map_Kd";
+        }
+        uniform_ambient_location_ = glGetUniformLocation(shader_, "ambient_light");
+        if (uniform_ambient_location_ == -1) {
+            std::cout << "Cannot get uniform {} location" << "ambient_light" << std::endl;
         }
 
     }
-
 
 }

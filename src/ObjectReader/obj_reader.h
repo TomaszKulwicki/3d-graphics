@@ -8,8 +8,8 @@
 #include <vector>
 #include <array>
 
-#include "spdlog/spdlog.h"
-#include "glm/glm.hpp"
+//#include "spdlog/spdlog.h"
+//#include "glm/glm.hpp"
 
 #include "Geometry/bounding_box.h"
 #include "3rdParty/tinyobjloader/tiny_obj_loader.h"

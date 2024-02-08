@@ -174,6 +174,30 @@ engine/fast:
 	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
+ColorMaterial.obj: ColorMaterial.cpp.obj
+.PHONY : ColorMaterial.obj
+
+# target to build an object file
+ColorMaterial.cpp.obj:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.obj
+.PHONY : ColorMaterial.cpp.obj
+
+ColorMaterial.i: ColorMaterial.cpp.i
+.PHONY : ColorMaterial.i
+
+# target to preprocess a source file
+ColorMaterial.cpp.i:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.i
+.PHONY : ColorMaterial.cpp.i
+
+ColorMaterial.s: ColorMaterial.cpp.s
+.PHONY : ColorMaterial.s
+
+# target to generate assembly for a file
+ColorMaterial.cpp.s:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.s
+.PHONY : ColorMaterial.cpp.s
+
 Material.obj: Material.cpp.obj
 .PHONY : Material.obj
 
@@ -270,6 +294,30 @@ mesh_loader.cpp.s:
 	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/mesh_loader.cpp.s
 .PHONY : mesh_loader.cpp.s
 
+texture.obj: texture.cpp.obj
+.PHONY : texture.obj
+
+# target to build an object file
+texture.cpp.obj:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/texture.cpp.obj
+.PHONY : texture.cpp.obj
+
+texture.i: texture.cpp.i
+.PHONY : texture.i
+
+# target to preprocess a source file
+texture.cpp.i:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/texture.cpp.i
+.PHONY : texture.cpp.i
+
+texture.s: texture.cpp.s
+.PHONY : texture.s
+
+# target to generate assembly for a file
+texture.cpp.s:
+	cd /d C:\Users\TOMASZ~1\Desktop\UJ\GRAFIK~1\3D23-M~1\CMAKE-~1 && $(MAKE) $(MAKESILENT) -f src\Engine\CMakeFiles\engine.dir\build.make src/Engine/CMakeFiles/engine.dir/texture.cpp.s
+.PHONY : texture.cpp.s
+
 utils.obj: utils.cpp.obj
 .PHONY : utils.obj
 
@@ -307,6 +355,9 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... engine
+	@echo ... ColorMaterial.obj
+	@echo ... ColorMaterial.i
+	@echo ... ColorMaterial.s
 	@echo ... Material.obj
 	@echo ... Material.i
 	@echo ... Material.s
@@ -319,6 +370,9 @@ help:
 	@echo ... mesh_loader.obj
 	@echo ... mesh_loader.i
 	@echo ... mesh_loader.s
+	@echo ... texture.obj
+	@echo ... texture.i
+	@echo ... texture.s
 	@echo ... utils.obj
 	@echo ... utils.i
 	@echo ... utils.s

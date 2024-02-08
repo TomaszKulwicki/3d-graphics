@@ -6,7 +6,6 @@
 
 #include <tuple>
 
-#include "spdlog/spdlog.h"
 #include "glm/glm.hpp"
 
 #define TINYOBJLOADER_IMPLEMENTATION // define this in only *one* .cc
@@ -53,7 +52,7 @@ namespace {
 
     void push_sub_mesh(xe::sMesh &s_mesh, const xe::sMesh::SubMesh sub_mesh) {
         if (sub_mesh.end > sub_mesh.start) {
-            spdlog::debug("Pushing submesh {:4d} {:4d}", sub_mesh.start, sub_mesh.end);
+            std::cout << "Pushing submesh {:4d} {:4d}" << sub_mesh.start, sub_mesh.end;
             s_mesh.submeshes.push_back(sub_mesh);
         }
     }
@@ -75,7 +74,7 @@ namespace {
         sub_mesh.start = index;
         sub_mesh.mat_idx = mat_idx;
         for (auto sh: shapes) {
-            spdlog::debug("Processing shape {}",sh.name);
+            std::cout << "Processing shape {}" << sh.name;
             size_t index_offset = 0;
 
             for (size_t f = 0; f < sh.mesh.num_face_vertices.size(); f++) {
@@ -88,7 +87,7 @@ namespace {
                 }
                 int fv = sh.mesh.num_face_vertices[f];
                 if (fv != 3) {
-                    spdlog::error("Reading a non triangular face");
+                    std::cout << "Reading a non triangular face";
                     return 1;
                 }
                 auto triangle = get_face(sh, index_offset, attrib);
@@ -97,14 +96,14 @@ namespace {
                     mesh.vertex_coords.push_back(triangle.position[v]);
                     if (triangle.has_texcoord[v]) {
                         if (!mesh.has_texcoords[0]) {
-                            spdlog::warn("Some vertices have texcoord and some do not in OBJ file.");
+                            std::cout << "Some vertices have texcoord and some do not in OBJ file.";
                             return 2;
                         }
                         mesh.vertex_texcoords[0].push_back(triangle.tex_coord[v]);
                     }
                     if (triangle.has_normals[v]) {
                         if (!mesh.has_normals) {
-                            spdlog::warn("Some vertices have normals and some do not in OBJ file.");
+                            std::cout << "Some vertices have normals and some do not in OBJ file.";
                             return 3;
                         }
                         mesh.vertex_normals.push_back(triangle.normal[v]);
@@ -135,10 +134,10 @@ namespace {
             ret = tinyobj::LoadObj(attrib, shapes, materials, &warn, &err, name.c_str(), mtl_base_dir.c_str());
 
         if (!warn.empty()) {
-            spdlog::warn(warn);
+            std::cout << warn;
         }
         if (!err.empty()) {
-            spdlog::error(err);
+            std::cout << err;
         }
         return ret;
     }
@@ -147,7 +146,7 @@ namespace {
 
 namespace xe {
     xe::sMesh load_smesh_from_obj(std::string name, std::string mtl_base_dir) {
-        spdlog::debug("Loading obj file `{}'", name);
+        std::cout << "Loading obj file `{}'", name;
         xe::sMesh s_mesh;
 
         tinyobj::attrib_t attrib;
@@ -155,12 +154,12 @@ namespace xe {
 
         auto ret = read_obj(name, mtl_base_dir, &attrib, &shapes, &s_mesh.materials);
         if (!ret) {
-            spdlog::error("Error reading obj file {} {}", name, mtl_base_dir);
+            std::cout << "Error reading obj file {} {}" << name << mtl_base_dir;
             return s_mesh;
         }
 
         if (attrib.vertices.empty()) {
-            spdlog::error("No vertices in obj file {}", name);
+            std::cout << "No vertices in obj file {}" << name;
             return s_mesh;
         }
 
@@ -170,7 +169,3 @@ namespace xe {
 
     }
 }
-
-
-
-

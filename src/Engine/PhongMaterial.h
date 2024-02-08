@@ -5,6 +5,7 @@
 #pragma once
 
 #include "Material.h"
+#include "Application/utils.h"
 
 #include <string>
 
@@ -35,6 +36,7 @@ namespace xe {
         static GLuint shader_;
         static GLuint material_uniform_buffer_;
         static GLint uniform_map_Kd_location_;
+        static GLint uniform_ambient_location_;
 
         glm::vec4 Kd_;
         GLuint map_Kd_;

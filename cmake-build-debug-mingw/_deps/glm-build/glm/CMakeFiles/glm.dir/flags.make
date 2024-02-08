@@ -6,5 +6,5 @@ CXX_DEFINES = -DMAJOR=4 -DMINOR=6 -DROOT_DIR="\"C:/Users/Tomasz Kulwicki/Desktop
 
 CXX_INCLUDES = @CMakeFiles/glm.dir/includes_CXX.rsp
 
-CXX_FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+CXX_FLAGS = -g -std=c++17 -fdiagnostics-color=always
 

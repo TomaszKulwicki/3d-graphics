@@ -1,7 +1,3 @@
-//
-// Created by Piotr Białas on 20/11/2021.
-//
-
 #include "ColorMaterial.h"
 
 #include "Application/utils.h"
@@ -39,8 +35,6 @@ namespace xe {
     }
 
     void ColorMaterial::init() {
-
-
         auto program = xe::utils::create_program(
                 {{GL_VERTEX_SHADER,   std::string(PROJECT_DIR) + "/shaders/color_vs.glsl"},
                  {GL_FRAGMENT_SHADER, std::string(PROJECT_DIR) + "/shaders/color_fs.glsl"}});

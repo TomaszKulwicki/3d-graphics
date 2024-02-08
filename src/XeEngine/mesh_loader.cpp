@@ -16,7 +16,7 @@
 
 #include "ObjectReader/obj_reader.h"
 #include "XeEngine/ColorMaterial.h"
-#include "XeEngine/PhongMaterial.h"
+#include "Engine/PhongMaterial.h"
 #include "XeEngine/Mesh.h"
 
 

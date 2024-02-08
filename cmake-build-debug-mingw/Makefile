@@ -446,6 +446,19 @@ Textures/fast:
 	$(MAKE) $(MAKESILENT) -f src\Assignments\Textures\CMakeFiles\Textures.dir\build.make src/Assignments/Textures/CMakeFiles/Textures.dir/build
 .PHONY : Textures/fast
 
+#=============================================================================
+# Target rules for targets named Phong
+
+# Build rule for target.
+Phong: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Phong
+.PHONY : Phong
+
+# fast build rule for target.
+Phong/fast:
+	$(MAKE) $(MAKESILENT) -f src\Assignments\Phong\CMakeFiles\Phong.dir\build.make src/Assignments/Phong/CMakeFiles/Phong.dir/build
+.PHONY : Phong/fast
+
 src/3rdParty/glad/glad_4_6/glad/src/gl.obj: src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj
 .PHONY : src/3rdParty/glad/glad_4_6/glad/src/gl.obj
 
@@ -490,6 +503,7 @@ help:
 	@echo ... Indices
 	@echo ... MeshesMaterials
 	@echo ... PVM
+	@echo ... Phong
 	@echo ... Pyramid
 	@echo ... Resizing
 	@echo ... Textures
