@@ -4,7 +4,6 @@
 
 layout(location=0) out vec4 vFragColor;
 
-
 #if __VERSION__ > 410
 layout(std140, binding=0) uniform Material {
 #else
@@ -21,10 +20,7 @@ layout(std140, binding=0) uniform Material {
     bool use_map_Ns; //17
 } material;
 
-
-
 uniform vec3 ambient_light;
-
 
 struct PointLight {
     vec3 position_in_view_space;
@@ -40,12 +36,10 @@ layout(std140) uniform Lights {
     PointLight light[MAX_POINT_LIGHTS];
 } p_light;
 
-
 in vec2 vertex_texcoords_0;
 in vec3 vertex_coords_in_viewspace;
 in vec3 vertex_normals_in_viewspace;
 in vec3 vertex_normals;
-
 
 uniform sampler2D map_Ka;
 uniform sampler2D map_Kd;
@@ -69,6 +63,6 @@ if(material.use_map_Ks)
 if(material.use_map_Ns)
     Ns *= texture(map_Ks, vertex_texcoords_0).a;
 
-vFragColor = Kd;
-//vFragColor.rgb = normal;
+//vFragColor = Kd;
+vFragColor.rgb = normal;
 }

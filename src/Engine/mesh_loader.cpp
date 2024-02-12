@@ -43,7 +43,7 @@ namespace xe {
         }
         if (smesh.has_normals)
             n_floats_per_vertex += 3;
-        if (smesh.has_normals)
+        if (smesh.has_tangents)
             n_floats_per_vertex += 4;
 
 

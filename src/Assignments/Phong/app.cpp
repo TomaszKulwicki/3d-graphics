@@ -51,7 +51,6 @@ void SimpleShapeApplication::init() {
     glBufferData(GL_UNIFORM_BUFFER, 64, nullptr, GL_STATIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 1, transformation);
 
-
     glClearColor(0.81f, 0.81f, 0.8f, 1.0f);
     glViewport(0, 0, w, h);
 
@@ -63,9 +62,14 @@ void SimpleShapeApplication::frame() {
 
     glm::mat4 M(1.0f);
     auto PVM = camera_->projection() * camera_->view() * M;
+    auto VM = camera_->view();
+    auto R = glm::mat3(VM);
+    auto N = glm::mat3(glm::cross(R[1], R[2]), glm::cross(R[2], R[0]), glm::cross(R[0], R[1]));
 
     glBindBuffer(GL_UNIFORM_BUFFER, transformation);
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4),&PVM[0]);
+    glBufferSubData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), sizeof(glm::mat4), &VM[0]);
+    glBufferSubData(GL_UNIFORM_BUFFER, 2*sizeof(glm::mat4), sizeof(glm::mat3), &N[0]);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
 
     for (auto m: meshes_) {

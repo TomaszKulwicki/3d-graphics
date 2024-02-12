@@ -51,10 +51,10 @@ namespace xe {
         shader_ = program;
 
         glGenBuffers(1, &material_uniform_buffer_);
-
         glBindBuffer(GL_UNIFORM_BUFFER, material_uniform_buffer_);
         glBufferData(GL_UNIFORM_BUFFER, 18* sizeof(float), nullptr, GL_STATIC_DRAW);
         glBindBuffer(GL_UNIFORM_BUFFER, 0u);
+
 #if __APPLE__
         uniform_block_binding(shader_, "Material",0);
 #endif
