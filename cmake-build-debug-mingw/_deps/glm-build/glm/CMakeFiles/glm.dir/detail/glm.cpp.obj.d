@@ -101,6 +101,52 @@ _deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj: \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/vector_bool3.hpp \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/../detail/type_vec3.hpp \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/../detail/type_vec3.inl \
+ C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/../detail/compute_vector_decl.hpp \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
+ C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/../detail/_vectorize.hpp \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/vector_bool3_precision.hpp \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/vector_float3.hpp \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/vector_float3_precision.hpp \
@@ -155,6 +201,15 @@ _deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj: \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/ext/matrix_double3x3.hpp \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/type_mat3x3.hpp \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/type_mat3x3.inl \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/common.hpp \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/_fixes.hpp \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/func_common.inl \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/vector_relational.hpp \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/func_vector_relational.inl \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/compute_common.hpp \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/setup.hpp \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/type_vec1.hpp \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/type_vec1.inl \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/ext/matrix_double3x3_precision.hpp \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/ext/matrix_float3x3.hpp \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/ext/matrix_float3x3_precision.hpp \
@@ -183,24 +238,14 @@ _deps/glm-build/glm/CMakeFiles/glm.dir/detail/glm.cpp.obj: \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/ext/matrix_double4x4.hpp \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/type_mat4x4.hpp \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/type_mat4x4.inl \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/geometric.hpp \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/func_geometric.inl \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/exponential.hpp \
+ C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/func_exponential.inl \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/ext/matrix_double4x4_precision.hpp \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/ext/matrix_float4x4.hpp \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/ext/matrix_float4x4_precision.hpp \
  C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/func_matrix.inl \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/geometric.hpp \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/func_geometric.inl \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/exponential.hpp \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/type_vec1.hpp \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/type_vec1.inl \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/func_exponential.inl \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/vector_relational.hpp \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/func_vector_relational.inl \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/_vectorize.hpp \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/common.hpp \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/_fixes.hpp \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/func_common.inl \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/compute_common.hpp \
- C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/cmake-build-debug-mingw/_deps/glm-src/glm/detail/setup.hpp \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/matrix_double2x2_precision.hpp \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/matrix_float2x2.hpp \
  C:/Users/TOMASZ~1/Desktop/UJ/GRAFIK~1/3D23-M~1/CMAKE-~1/_deps/glm-src/glm/gtx/.././ext/matrix_float2x2_precision.hpp \

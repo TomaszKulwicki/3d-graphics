@@ -207,6 +207,23 @@ src/ObjectReader/CMakeFiles/objreader.dir/obj_reader.cpp.obj: C:/Users/Tomasz\ K
   _deps/glm-src/glm/ext/vector_bool3.hpp \
   _deps/glm-src/glm/detail/type_vec3.hpp \
   _deps/glm-src/glm/detail/type_vec3.inl \
+  _deps/glm-src/glm/detail/compute_vector_decl.hpp \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
+  _deps/glm-src/glm/detail/_vectorize.hpp \
   _deps/glm-src/glm/ext/vector_bool3_precision.hpp \
   _deps/glm-src/glm/ext/vector_float3.hpp \
   _deps/glm-src/glm/ext/vector_float3_precision.hpp \
@@ -261,6 +278,16 @@ src/ObjectReader/CMakeFiles/objreader.dir/obj_reader.cpp.obj: C:/Users/Tomasz\ K
   _deps/glm-src/glm/ext/matrix_double3x3.hpp \
   _deps/glm-src/glm/detail/type_mat3x3.hpp \
   _deps/glm-src/glm/detail/type_mat3x3.inl \
+  _deps/glm-src/glm/common.hpp \
+  _deps/glm-src/glm/detail/_fixes.hpp \
+  _deps/glm-src/glm/detail/func_common.inl \
+  _deps/glm-src/glm/vector_relational.hpp \
+  _deps/glm-src/glm/detail/setup.hpp \
+  _deps/glm-src/glm/detail/func_vector_relational.inl \
+  _deps/glm-src/glm/detail/compute_common.hpp \
+  _deps/glm-src/glm/detail/setup.hpp \
+  _deps/glm-src/glm/detail/type_vec1.hpp \
+  _deps/glm-src/glm/detail/type_vec1.inl \
   _deps/glm-src/glm/ext/matrix_double3x3_precision.hpp \
   _deps/glm-src/glm/ext/matrix_float3x3.hpp \
   _deps/glm-src/glm/ext/matrix_float3x3_precision.hpp \
@@ -289,25 +316,14 @@ src/ObjectReader/CMakeFiles/objreader.dir/obj_reader.cpp.obj: C:/Users/Tomasz\ K
   _deps/glm-src/glm/ext/matrix_double4x4.hpp \
   _deps/glm-src/glm/detail/type_mat4x4.hpp \
   _deps/glm-src/glm/detail/type_mat4x4.inl \
+  _deps/glm-src/glm/geometric.hpp \
+  _deps/glm-src/glm/detail/func_geometric.inl \
+  _deps/glm-src/glm/exponential.hpp \
+  _deps/glm-src/glm/detail/func_exponential.inl \
   _deps/glm-src/glm/ext/matrix_double4x4_precision.hpp \
   _deps/glm-src/glm/ext/matrix_float4x4.hpp \
   _deps/glm-src/glm/ext/matrix_float4x4_precision.hpp \
   _deps/glm-src/glm/detail/func_matrix.inl \
-  _deps/glm-src/glm/geometric.hpp \
-  _deps/glm-src/glm/detail/func_geometric.inl \
-  _deps/glm-src/glm/exponential.hpp \
-  _deps/glm-src/glm/detail/type_vec1.hpp \
-  _deps/glm-src/glm/detail/type_vec1.inl \
-  _deps/glm-src/glm/detail/func_exponential.inl \
-  _deps/glm-src/glm/vector_relational.hpp \
-  _deps/glm-src/glm/detail/setup.hpp \
-  _deps/glm-src/glm/detail/func_vector_relational.inl \
-  _deps/glm-src/glm/detail/_vectorize.hpp \
-  _deps/glm-src/glm/common.hpp \
-  _deps/glm-src/glm/detail/_fixes.hpp \
-  _deps/glm-src/glm/detail/func_common.inl \
-  _deps/glm-src/glm/detail/compute_common.hpp \
-  _deps/glm-src/glm/detail/setup.hpp \
   _deps/glm-src/glm/ext/matrix_double2x2_precision.hpp \
   _deps/glm-src/glm/ext/matrix_float2x2.hpp \
   _deps/glm-src/glm/ext/matrix_float2x2_precision.hpp \
@@ -323,11 +339,8 @@ src/ObjectReader/CMakeFiles/objreader.dir/obj_reader.cpp.obj: C:/Users/Tomasz\ K
   C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/src/3rdParty/tinyobjloader/tiny_obj_loader.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   C:/Users/Tomasz\ Kulwicki/Desktop/UJ/Grafika\ 3D/3d23-main/src/ObjectReader/sMesh.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/string.h \
@@ -401,6 +414,8 @@ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h:
 
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h:
+
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h:
@@ -408,6 +423,8 @@ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar:
 
@@ -781,9 +798,9 @@ _deps/glm-src/glm/ext/vector_bool2.hpp:
 
 _deps/glm-src/glm/detail/type_vec2.hpp:
 
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h:
-
 _deps/glm-src/glm/ext/matrix_double3x2.hpp:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h:
 
 _deps/glm-src/glm/detail/type_vec2.inl:
 
@@ -827,7 +844,37 @@ _deps/glm-src/glm/ext/scalar_uint_sized.hpp:
 
 _deps/glm-src/glm/detail/type_vec3.hpp:
 
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h:
+
 _deps/glm-src/glm/detail/type_vec3.inl:
+
+_deps/glm-src/glm/detail/compute_vector_decl.hpp:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable.h:
+
+_deps/glm-src/glm/mat4x4.hpp:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h:
+
+_deps/glm-src/glm/detail/type_mat2x3.inl:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h:
+
+_deps/glm-src/glm/detail/_vectorize.hpp:
 
 _deps/glm-src/glm/ext/vector_float3.hpp:
 
@@ -877,8 +924,6 @@ _deps/glm-src/glm/ext/matrix_double2x3.hpp:
 
 _deps/glm-src/glm/detail/type_mat2x3.hpp:
 
-_deps/glm-src/glm/detail/type_mat2x3.inl:
-
 _deps/glm-src/glm/ext/matrix_double2x3_precision.hpp:
 
 _deps/glm-src/glm/ext/matrix_float2x3_precision.hpp:
@@ -909,6 +954,20 @@ _deps/glm-src/glm/detail/type_mat3x3.hpp:
 
 _deps/glm-src/glm/detail/type_mat3x3.inl:
 
+_deps/glm-src/glm/common.hpp:
+
+_deps/glm-src/glm/vector_relational.hpp:
+
+_deps/glm-src/glm/detail/func_vector_relational.inl:
+
+_deps/glm-src/glm/detail/compute_common.hpp:
+
+_deps/glm-src/glm/detail/type_vec1.hpp:
+
+_deps/glm-src/glm/mat4x3.hpp:
+
+_deps/glm-src/glm/detail/type_vec1.inl:
+
 _deps/glm-src/glm/ext/matrix_float3x3.hpp:
 
 _deps/glm-src/glm/ext/matrix_float3x3_precision.hpp:
@@ -931,15 +990,7 @@ _deps/glm-src/glm/mat4x2.hpp:
 
 _deps/glm-src/glm/detail/type_mat4x2.inl:
 
-_deps/glm-src/glm/detail/type_vec1.inl:
-
-_deps/glm-src/glm/mat4x3.hpp:
-
 _deps/glm-src/glm/detail/type_mat4x3.hpp:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h:
-
-_deps/glm-src/glm/mat4x4.hpp:
 
 _deps/glm-src/glm/geometric.hpp:
 
@@ -947,19 +998,7 @@ _deps/glm-src/glm/detail/func_geometric.inl:
 
 _deps/glm-src/glm/exponential.hpp:
 
-_deps/glm-src/glm/detail/type_vec1.hpp:
-
 _deps/glm-src/glm/detail/func_exponential.inl:
-
-_deps/glm-src/glm/vector_relational.hpp:
-
-_deps/glm-src/glm/detail/func_vector_relational.inl:
-
-_deps/glm-src/glm/detail/_vectorize.hpp:
-
-_deps/glm-src/glm/common.hpp:
-
-_deps/glm-src/glm/detail/compute_common.hpp:
 
 _deps/glm-src/glm/ext/matrix_float2x2.hpp:
 

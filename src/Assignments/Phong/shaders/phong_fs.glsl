@@ -63,6 +63,7 @@ if(material.use_map_Ks)
 if(material.use_map_Ns)
     Ns *= texture(map_Ks, vertex_texcoords_0).a;
 
-//vFragColor = Kd;
-vFragColor.rgb = normal;
+//vFragColor.a = Kd.a;
+//vFragColor.rgb = normal;
+vFragColor.rgb = abs(vertex_coords_in_viewspace);
 }

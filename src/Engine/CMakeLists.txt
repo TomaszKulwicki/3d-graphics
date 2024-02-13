@@ -13,6 +13,7 @@ add_library(engine
         texture.h
         ColorMaterial.cpp
         ColorMaterial.h
+        Light.h
 )
 
 target_link_libraries(engine PUBLIC objreader PRIVATE spdlog::spdlog)

@@ -20,17 +20,17 @@ namespace xe {
         glUseProgram(program());
         int use_map_Kd = 0;
         if (map_Kd_ > 0) {
-            OGL_CALL(glUniform1i(uniform_map_Kd_location_, map_Kd_unit_));
-            OGL_CALL(glActiveTexture(GL_TEXTURE0 + map_Kd_unit_));
-            OGL_CALL(glBindTexture(GL_TEXTURE_2D, map_Kd_));
+            glUniform1i(uniform_map_Kd_location_, map_Kd_unit_);
+            glActiveTexture(GL_TEXTURE0 + map_Kd_unit_);
+            glBindTexture(GL_TEXTURE_2D, map_Kd_);
             use_map_Kd = 1;
         }
-        OGL_CALL(glBindBufferBase(GL_UNIFORM_BUFFER, 0, material_uniform_buffer_));
+        glBindBufferBase(GL_UNIFORM_BUFFER, 0, material_uniform_buffer_);
 
         glBindBuffer(GL_UNIFORM_BUFFER, material_uniform_buffer_);
         glBufferSubData(GL_UNIFORM_BUFFER, 4* sizeof(float), sizeof(glm::vec4), &Kd_[0]);
         glBufferSubData(GL_UNIFORM_BUFFER, 15 * sizeof(float), sizeof(GLint), &use_map_Kd);
-        OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, 0u));
+        glBindBuffer(GL_UNIFORM_BUFFER, 0u);
 
     }
 

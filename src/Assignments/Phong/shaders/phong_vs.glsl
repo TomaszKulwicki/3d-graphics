@@ -23,8 +23,9 @@ out vec3 vertex_coords_in_viewspace;
 out vec3 vertex_normals_in_viewspace;
 
 void main() {
+
     vertex_texcoords_0 = a_vertex_texcoords_0;
     vertex_coords_in_viewspace = vec3(VM*a_vertex_position);
-    vertex_normals_in_viewspace = normalize(a_vertex_normals);
+    vertex_normals_in_viewspace = normalize(N*a_vertex_normals);
     gl_Position =  PVM*a_vertex_position;
 }
